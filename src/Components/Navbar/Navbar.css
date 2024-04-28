@@ -1,0 +1,132 @@
+nav {
+    width: 100%;
+    /* background-color: var(--first-color); */
+    color: var(--text-white);
+    padding: 4px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: var(--normal-font-size);
+    font-family: var(--secondary-font);
+    position: relative;
+    transition: all 0.5s ease-in-out; 
+}
+nav ul li:hover {
+    font-size: var(--large-font-size);
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 80%;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out; 
+}
+
+nav ul li:hover::after {
+    background-color: var(--text-white);
+}
+
+.button {
+    display: inline-block;
+    color: var(--text-white);
+    border: 1px solid var(--logo-color);
+    padding: 10px 50px;
+    border-radius: 35px;
+    font-family: var(--secondary-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    color: var(--text-white);
+}
+
+.button::before {
+    content: "";
+    position:absolute;
+    inset: 0;
+    background-color: var(--logo-color);
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: all 0.5s ease-out;
+}
+
+.dark-nav{
+    background-color: var(--first-color);
+    transition: 0.5s;
+}
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .nav{
+        padding: 15px 0;
+    }
+    nav ul{
+       position: fixed;
+       top: 0;
+       right: 0px;
+       background:  rgba(3, 0, 0, 0.8);;
+       z-index: -1;
+       height: 100%;
+       width: 200px;
+       padding-top: 70px;
+       transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .button{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}

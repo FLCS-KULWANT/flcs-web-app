@@ -1,0 +1,132 @@
+.heading {
+    text-align: center;
+    margin-top: 25px;
+    font-size: var(--h3-font-size);
+    color: var(--logo-color);
+}
+.questionMarkIcon{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    gap: 3px;
+    color: var(--body-color);
+}
+.programs {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.program {
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.programImage {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.programImage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.programImage .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background:  rgba(71, 3, 98, 0.5);
+    transition: height 0.5s ease;
+    border-radius: 10px;
+}
+
+.program:hover .programImage .overlay {
+    height: 100%; 
+}
+
+.programImage .programTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--h2-font-size);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.program:hover .programImage img {
+    transform: scale(1.1);
+}
+
+.program:hover .programImage .overlay {
+    opacity: 1;
+}
+
+.program:hover .programImage .programTitle {
+    opacity: 1;
+}
+
+/* Add these styles to your Programs.css file */
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(3, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    color: #fff;
+    width: 80%;
+    height: auto; 
+    max-width: 500px; 
+    max-height: 600px;
+    overflow: auto;
+}
+
+.dialogContent {
+    text-align: center;
+}
+
+.dialogContent h3 {
+    margin-bottom: 10px;
+    color: var(--logo-color);
+}
+.dialog button {
+    background-color: var(--first-color);
+    color: var(--text-white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 5px 20px;
+    font-size: var(--normal-font-size);
+    font-family: var(--secondary-font);
+}
