@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    /* background-color: var(--first-color); */
+    
     color: var(--text-white);
     padding: 4px 10px;
     position: fixed;
@@ -10,6 +10,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+}
+
+.navbar-home nav{
+    background-color: var(--first-color);
 }
 
 .logo {
@@ -55,7 +59,7 @@ nav ul li:hover::after {
     display: inline-block;
     color: var(--text-white);
     border: 1px solid var(--logo-color);
-    padding: 10px 50px;
+    padding: 10px 15px;
     border-radius: 35px;
     font-family: var(--secondary-font);
     font-size: var(--large-font-size);
@@ -128,5 +132,8 @@ nav ul li:hover::after {
     }
     .hide-mobile-menu{
         right: -200px;
+    }
+    .container{
+        width: 90%;
     }
 }

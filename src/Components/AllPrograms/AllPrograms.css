@@ -1,0 +1,89 @@
+.allprograms{
+background: red;
+margin-top: 65px;
+}
+
+.all-programs-container {
+    width : 100%;
+    margin: 0 auto;
+    padding: 20px;  
+    margin-top: 50px;
+}
+  .degree-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    span{
+      margin-left: 20px;
+      display: flex;
+      gap: var(--small-font-size);
+    }
+    .back-btn{
+      color: var(--first-color);
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+    .next-btn{
+      color: var(--first-color);
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+  }
+  .university-card {
+    margin-bottom: 40px;
+  } 
+  .university-card h2{
+    display: flex;
+    gap: 20px;
+    color: var(--logo-color);
+    align-items: center;
+    justify-content: center;
+  }
+  .university-location{
+    font-size: var(--small-font-size);
+  }
+  .course-section {
+    display: flex;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .course-card {
+    border: 1px solid var(--first-color);
+     min-height: 150px;
+     min-width:250px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .course-card h4 {
+    margin-bottom: 5px;
+  }
+  
+  .course-card p {
+    margin: 5px 0;
+  }
+  
+  .course-card a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .course-card a:hover {
+    text-decoration: underline;
+  }
+  

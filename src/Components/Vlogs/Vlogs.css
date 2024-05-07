@@ -1,0 +1,29 @@
+.vlogs-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.videos{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.videosCard .iframe{
+    width: 360px;
+    height: 180px;
+}
+
+.vlogs-section .button{
+    color: var(--logo-color) ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.vlogs-section .button:hover{
+    color: var(--text-white) ;
+}

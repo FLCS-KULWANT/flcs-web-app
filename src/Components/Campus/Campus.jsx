@@ -4,7 +4,7 @@ import milan from '../../assests/milan.jpg';
 import marche from '../../assests/marche.jpg';
 import cassino from '../../assests/cassino.jpg';
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom';
 const universities = [
   {
     id: 1,
@@ -57,7 +57,9 @@ const Campus = ({ heading, subheading }) => {
           </div>
         ))}
       </div>
+      <Link to='/allprograms'>
       <button className="button">See more.. <FaArrowRightLong/></button>
+      </Link>
     </div>
   );
 }

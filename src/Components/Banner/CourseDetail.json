@@ -1,0 +1,185 @@
+{
+    "universities": [
+      {
+        "name": "University of Bologna",
+        "location": "Bologna",
+        "bachelors": [
+          {
+            "course": "1Computer Science",
+            "deadline": "2024-06-30",
+            "link": "https://unibo.it/en/bachelors/computer-science"
+          },
+          {
+            "course": "2Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "3Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "4Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "5Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "6Art History",
+            "deadline": "2024-07-15",
+            "link": "https://www.uniroma1.it/en/pagina/art-history"
+          },
+          {
+            "course": "7Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "8Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "9Art History",
+            "deadline": "2024-07-15",
+            "link": "https://www.uniroma1.it/en/pagina/art-history"
+          },
+          {
+            "course": "10Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "11Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "12Engineering",
+            "deadline": "2024-07-05",
+            "link": "https://unibo.it/en/bachelors/engineering"
+          },
+          {
+            "course": "13Art History",
+            "deadline": "2024-07-15",
+            "link": "https://www.uniroma1.it/en/pagina/art-history"
+          }
+        ],
+        "masters": [
+          {
+            "course": "Economics",
+            "deadline": "2024-07-15",
+            "link": "https://unibo.it/en/masters/economics"
+          },
+          {
+            "course": "Law",
+            "deadline": "2024-07-20",
+            "link": "https://unibo.it/en/masters/law"
+          }
+        ],
+        "phd": [
+          {
+            "course": "Physics",
+            "deadline": "2024-08-10",
+            "link": "https://unibo.it/en/phd/physics"
+          },
+          {
+            "course": "Chemistry",
+            "deadline": "2024-08-15",
+            "link": "https://unibo.it/en/phd/chemistry"
+          }
+        ],
+        "medical": [
+          {
+            "course": "Medicine",
+            "deadline": "2024-05-30",
+            "link": "https://unibo.it/en/medicina-e-chirurgia"
+          },
+          {
+            "course": "Dentistry",
+            "deadline": "2024-06-30",
+            "link": "https://unibo.it/en/odontoiatria"
+          }
+        ]
+      },
+      {
+        "name": "University of Milan",
+        "location": "Milan",
+        "bachelors": [
+          {
+            "course": "Architecture",
+            "deadline": "2024-07-10",
+            "link": "https://www.unimi.it/en/education/degree-programmes/bachelor-degree-programmes/architecture"
+          }
+        ],
+        "masters": [
+          {
+            "course": "Psychology",
+            "deadline": "2024-07-20",
+            "link": "https://www.unimi.it/en/education/degree-programmes/master-degree-programmes/psychology"
+          },
+          {
+            "course": "Business Administration",
+            "deadline": "2024-07-25",
+            "link": "https://www.unimi.it/en/education/degree-programmes/master-degree-programmes/business-administration"
+          }
+        ],
+        "phd": [
+          {
+            "course": "Biology",
+            "deadline": "2024-08-15",
+            "link": "https://www.unimi.it/en/education/doctoral-programmes"
+          }
+        ],
+        "medical": [
+          {
+            "course": "Dentistry",
+            "deadline": "2024-06-25",
+            "link": "https://www.unimi.it/en/education/degree-programmes/single-cycle-master-degree-programmes/dentistry"
+          }
+        ]
+      },
+      {
+        "name": "Sapienza University of Rome",
+        "location": "Rome",
+        "bachelors": [
+          {
+            "course": "Art History",
+            "deadline": "2024-07-15",
+            "link": "https://www.uniroma1.it/en/pagina/art-history"
+          }
+        ],
+        "masters": [
+          {
+            "course": "Political Science",
+            "deadline": "2024-07-30",
+            "link": "https://corsidilaurea.uniroma1.it/en/corso/2021/18133/home"
+          },
+          {
+            "course": "Information Engineering",
+            "deadline": "2024-08-05",
+            "link": "https://corsidilaurea.uniroma1.it/en/corso/2021/18115/home"
+          }
+        ],
+        "phd": [
+          {
+            "course": "Mathematics",
+            "deadline": "2024-08-20",
+            "link": "https://www.mat.uniroma1.it/it/dottorati-0"
+          }
+        ],
+        "medical": [
+          {
+            "course": "Medicine and Surgery",
+            "deadline": "2024-06-30",
+            "link": "https://corsidilaurea.uniroma1.it/en/corso/2021/18131/home"
+          }
+        ]
+      }
+    ]
+  }

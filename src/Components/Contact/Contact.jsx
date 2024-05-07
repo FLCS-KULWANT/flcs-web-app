@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Contact.css';
 import { SiGmail } from 'react-icons/si';
 import { MdAddCall } from 'react-icons/md';
-import { FaLocationDot } from 'react-icons/fa6';
-import { FaEnvelopeOpenText } from 'react-icons/fa';
+import { FaLocationDot, FaYoutube } from 'react-icons/fa6';
+import { FaEnvelopeOpenText, FaInstagram, FaTelegramPlane, } from 'react-icons/fa';
 
 const Contact = ({heading, subheading}) => {
   const [fullName, setFullName] = useState('');
@@ -17,8 +17,11 @@ const Contact = ({heading, subheading}) => {
   const ContactData = {
     email: '2024ksrathore@gmail.com',
     mobile: '+39 351 755 6337, +91 99278 92021',
-    address: 'Kadam Talla, Chas (827013)',
-    whatsappNumber : '9927892021'
+    address: 'Tanakpur Road, Opposite Police Station, Majhola (U.S. Nagar), 262308, Uttarakhand',
+    whatsappNumber : '9927892021',
+    instagram : 'https://www.instagram.com/kulwant.in.italy',
+    telegram : 'http://t.me/livinginitalykulwant',
+    youtube : 'https://www.youtube.com/@livinginitalykulwant'
 };
 
   const sendToWhatsApp = () => {
@@ -61,7 +64,10 @@ const Contact = ({heading, subheading}) => {
           <ul>
           <a href={`mailto:${ContactData.email}`}><li><SiGmail className="icon" /> {ContactData.email}</li></a>
           <a href={`tel:${ContactData.mobile}`}><li><MdAddCall className="icon" /> {ContactData.mobile}</li></a>
-            <li><FaLocationDot className="icon" /> {ContactData.address}</li>
+          <li><FaLocationDot className="icon" /> {ContactData.address}</li>
+          <a href={ContactData.youtube} target='_blank'><li><FaYoutube className="icon"/>{ContactData.youtube.split('/').pop()}</li></a>
+          <a href={ContactData.instagram} target='_blank'><li><FaInstagram className="icon"/>{ContactData.instagram.split('/').pop()}</li></a>
+          <a href={ContactData.telegram} target='_blank'><li><FaTelegramPlane className="icon"/>{ContactData.telegram.split('/').pop()}</li></a>
           </ul>
         </div>
         <div className="contact-col">

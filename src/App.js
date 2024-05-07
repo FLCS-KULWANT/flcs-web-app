@@ -1,25 +1,23 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './Components/About/About';
-import Banner from './Components/Banner/Banner';
-import Campus from './Components/Campus/Campus';
-import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import Navbar from './Components/Navbar/Navbar';
-import Programs from './Components/Programs/Programs';
-import Testimonials from './Components/Testimonials/Testimonials';
-
+import AllVideos from './Components/Vlogs/AllVideos'; // Import the new component
+import AllPrograms from './Components/AllPrograms/AllPrograms';
+import { Home } from './Components/Home/Home';
+import {Navbar, NavbarHome} from './Components/Navbar/Navbar';
 function App() {
   return (
-    <div className="App">
-     <Navbar/>
-     <Banner/>
-     <Programs heading = 'Our Programs' subheading = 'Explore our range of degree programs to achieve your academic goals.'/>
-     <Campus heading = 'Top Italian Universities' subheading = 'Discover the leading universities in Italy and their exceptional offerings.'/>
-     <Testimonials heading = 'Hear from our students' subheading = 'Dont trust on us? Hear from our students'/>
-     <About heading = 'Know about Us' subheading = 'Learn more about our institution and our mission.'/>
-     <Contact heading = 'Get in Touch' subheading = 'Let us know how can I help you.'/>
-     <Footer/>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path="/allvideos" element={<AllVideos/>} />
+          <Route path="/allprograms" element={<AllPrograms />} />
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 

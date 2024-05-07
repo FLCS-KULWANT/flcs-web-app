@@ -46,11 +46,8 @@ const Testimonials = ({ heading, subheading }) => {
             const newNumberOfSlides = window.innerWidth < 800 ? 1 : 2;
             setNumberOfSlides(newNumberOfSlides);
         };
-
         handleResize(); // Call initially to set the initial state
-
         window.addEventListener('resize', handleResize);
-
         return () => {
             window.removeEventListener('resize', handleResize);
         };

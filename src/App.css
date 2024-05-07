@@ -134,3 +134,30 @@ span{
 .heading{
     padding: 0 10px;
 }
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container stretches to at least the height of the viewport */
+  }
+  
+  .footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--logo-color);
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
